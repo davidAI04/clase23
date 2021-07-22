@@ -4,6 +4,8 @@ const app = express()
 require('dotenv').config()
 const cors = require('cors')
 
+
+const { appListar } = require('./app/vistas/vista.producto')
 //Middleware globales
 app.use(express.json())
 app.use(cors())
@@ -29,3 +31,4 @@ async function bootstrap () {
 
 bootstrap();
 
+appListar(app)

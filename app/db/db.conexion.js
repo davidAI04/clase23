@@ -16,4 +16,4 @@ const sequelize = new Sequelize('productos_tecla', null, null, {
   }
 })
 
-module.exports = sequilize;
+module.exports = sequelize;
